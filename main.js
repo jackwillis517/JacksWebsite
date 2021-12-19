@@ -1,8 +1,21 @@
-
 const menuBtn = document.querySelector(".menu-btn");
 const mobileMenu = document.querySelector(".mobileMenu");
 const helloWorldContainer = document.querySelector(".helloWorld-subcontainer");
 const aboutContainer = document.querySelector(".about-container");
+const panels = document.querySelectorAll(".panel");
+
+panels.forEach((panel) => {
+  panel.addEventListener("click", () => {
+    removeActiveClasses();
+    panel.classList.add("active");
+  });
+});
+
+function removeActiveClasses() {
+  panels.forEach((panel) => {
+    panel.classList.remove("active");
+  });
+}
 
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
@@ -19,7 +32,6 @@ menuBtn.addEventListener("click", () => {
   }
 });
 
-
 const tabs = document.querySelectorAll(".navmenu ul li a");
 tabs.forEach((item) => {
   item.addEventListener("click", () => {
@@ -29,4 +41,5 @@ tabs.forEach((item) => {
     this.classList.add("active");
   });
 });
+
 

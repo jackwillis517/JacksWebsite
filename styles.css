@@ -68,11 +68,9 @@ ul {
   left: 93.85%;
   transform: translate(-93.85%, -450%);
 }
-#handshake-icon {
-  padding-left: 25%;
-}
 
-#github-icon {
+
+#linkedin-icon {
   padding-left: 25%;
 }
 
@@ -497,7 +495,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   width: 65%;
-  border: #eb5e28 1.5px solid;
+  /* border: #eb5e28 1.5px solid; */
   border-radius: 15px;
   font-family: "Hind", sans-serif;
 }
@@ -690,16 +688,70 @@ ul {
   margin-right: 5%;
 }
 
-#webdev {
-  /* border: blueviolet 2px solid; */
+
+
+.banner-2 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    height: 1%;
 }
 
-#commandPrompt {
-  /* border: chartreuse 2px solid; */
+.cards-container {
+    display: flex;
+    width: 90vw;
 }
 
-#linux {
-  /* border: darkcyan 2px solid; */
+.panel {
+  border: solid 2px #437f97;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    border-radius: 50px;
+    color:#fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    border: solid 1px red;
+    font-size: 24px;
+    width: 40%;
+    position: relative;
+    /* bottom: 20px;
+    left: 20px; */
+    margin: 0;
+    margin-top: 20%;
+    margin-left: 5%;
+    opacity: 0;
+}
+
+.panel.active {
+    flex: 5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width: 600px){
+    .cards-container{
+        width: 100vh;
+    }
+
+    /* When the display is less then 600px make the last two cards disappear */
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -888,4 +940,7 @@ ul {
     margin-top: 5%;
     border: none;
   }
-} ;
+
+  
+  
+}
