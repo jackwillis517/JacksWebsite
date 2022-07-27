@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Time Vault url: https://mute-darkness-8535.on.fleek.co/-->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <title>Jack's Website - Portfolio</title>
-    <style>
+    <style class="background">
         body {
-            background-color: #fffcf2;
+            background-color: #252422;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: 50px 200px;
         }
     </style>
 </head>
@@ -25,13 +30,13 @@
                     <img src="images/email.png" alt="" width="30" />
                 </a>
             </li>
-            <!-- <li id="handshake-icon">
-                <a href="">
-                    <img src="images/hand-shake.png" alt="" width="30" />
+            <li id="github-icon">
+                <a href="https://github.com/jackwillis517">
+                    <img src="images/github.png" alt="" width="30" />
                 </a>
-            </li> -->
+            </li>
             <li id="linkedin-icon">
-                <a href="https://www.linkedin.com/in/jackwillis517">
+                <a href="https://www.linkedin.com/in/jack-willis-3b0b18127/">
                     <img src="images/linkedin.png" alt="" width="30" />
                 </a>
             </li>
@@ -41,12 +46,12 @@
     <nav class="navbar">
         <ul class="links">
             <li>
-                <a id="link-home-light" href="index.html">
+                <a id="link-home-dark" href="index.html">
                     Home
                 </a>
             </li>
             <li>
-                <a id="link-about-light" href="about.html">
+                <a id="link-about-dark" href="about.html">
                     About
                 </a>
             </li>
@@ -59,83 +64,94 @@
         <hr class="blue-hr">
     </nav>
 
-    <div class="about-container flex">
+    <div class="portfolio-container">
         <div class="banner-1">
             <h1>Portfolio</h1>
             <img id="arrowDown" src="images/arrowDown.png" alt="" width="50" height="50">
         </div>
     
-        <div class="section-1">
-            <div id="section-1-text">
-                <h2>Project</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora voluptatibus libero doloremque eaque ratione impedit adipisci fugit cum officiis pariatur eum unde velit nesciunt, doloribus commodi, deserunt, temporibus excepturi consequatur.</p>
+        <div class="portfolio-subcontainer">
+            <div class="portfolio-subcontainer-left">
+                <img id="su" src="images/timeVault1.png" alt="" width="500" height="500">
             </div>
-            <div id="section-1-image">
-                <img id="smile" src="images/headshot.jpg" alt="" width="350" height="350">
-            </div>
-        </div>
-    
-        <hr class="blue-hr">
-    
-        <div class="section-2">
-            <div id="section-2-image">
-                <img id="su" src="images/su.jfif" alt="" width="650" height="400">
-            </div>
-            <div id="section-2-text">
-                <h2>Project</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis aperiam laboriosam, nisi accusantium explicabo atque ullam obcaecati perferendis reiciendis modi debitis inventore, ipsum natus et officia sint. Possimus, illo eveniet.</p>
-            </div>
-        </div>
-
-        <hr class="orange-hr">
-
-        <div class="section-4">
-            <div id="section-4-text">
-                <h2>Project</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati autem officia exercitationem harum perspiciatis ex iste placeat? Quisquam, provident in! Non, voluptatum! Necessitatibus beatae tenetur corporis placeat a dignissimos.</p>
-            </div>
-            <div id="section-4-image">
-                <img id="su" src="images/su.jfif" alt="" width="650" height="400">
+            <div class="portfolio-subcontainer-right">
+                <div class="portfolio-subcontainer-right-text">
+                    <h1>Time Vault</h1>
+                    <p>This application is my first dapp, the purpose is to allow users to lock away their ether in case of emergency.
+                    I used hardhat to develop my smart contract and write my deploy scripts while using NextJS to create a fully responsive frontend.
+                    Additionally, I used Moralis for wallect management and the web3uikit for user interaction.
+                    </p>
+                </div>  
+                <div class="portfolio-subcontainer-right-stack">
+                    <h2>Stack:</h2>
+                    <img class="stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" width="50" height="50"/>
+                    <img class="stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="50" height="50"/>
+                    <img class="stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg" width="50" height="50"/>
+                    <img class="stack-img" src="images/hardhat1.png" width="50" height="50"/>
+                </div>
+                <div class="portfolio-subcontainer-right-buttons">
+                    <a href="https://github.com/jackwillis517/time-vault-frontend">Github</a>
+                    <a href="https://mute-darkness-8535.on.fleek.co/">Deployment</a>
+                </div>   
             </div>
         </div>
 
-        <hr class="blue-hr">
+        
 
-        <div class="section-1">
-            <div id="section-1-text">
-                <h2>Project</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora voluptatibus libero doloremque eaque ratione impedit adipisci fugit cum officiis pariatur eum unde velit nesciunt, doloribus commodi, deserunt, temporibus excepturi consequatur.</p>
+        <div class="portfolio-subcontainer">
+            <div class="portfolio-subcontainer-left">
+                <img id="su" src="images/chessgame.png" alt="" width="500" height="500">
             </div>
-            <div id="section-1-image">
-                <img id="smile" src="images/headshot.jpg" alt="" width="350" height="350">
-            </div>
-        </div>
-
-        <hr class="orange-hr">
-
-        <div class="section-4">
-            <div id="section-4-text">
-                <h2>Project</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore obcaecati autem officia exercitationem harum perspiciatis ex iste placeat? Quisquam, provident in! Non, voluptatum! Necessitatibus beatae tenetur corporis placeat a dignissimos.</p>
-            </div>
-            <div id="section-4-image">
-                <img id="su" src="images/su.jfif" alt="" width="650" height="400">
-            </div>
-        </div>
-
-        <hr class="orange-hr">
-
-        <div class="section-2">
-            <div id="section-2-image">
-                <img id="su" src="images/su.jfif" alt="" width="650" height="400">
-            </div>
-            <div id="section-2-text">
-                <h2>Project</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis aperiam laboriosam, nisi accusantium explicabo atque ullam obcaecati perferendis reiciendis modi debitis inventore, ipsum natus et officia sint. Possimus, illo eveniet.</p>
+            <div class="portfolio-subcontainer-right">
+                <div class="portfolio-subcontainer-right-text">
+                    <h1>Chess Game</h1>
+                    <p>The final project in my Computer Graphics course, Chess Game is a graphics demo showcasing everything that I learned
+                    in the course. It uses technique like: color picking, timer functions, lighting, textures, projection in 3D space, and first 
+                    person movement. The course was taught in C++ and used openGl verion 11.4, I really enjoyed this course and loved the four other
+                    projects that culminated in this one.
+                    </p>
+                </div>  
+                <div class="portfolio-subcontainer-right-stack">
+                    <h2>Stack:</h2>
+                    <img class="stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="50" height="50"/>
+                    <img class="stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg" width="50" height="50"/>
+                </div>
+                <div class="portfolio-subcontainer-right-buttons">
+                    <a href="https://github.com/jackwillis517/Graphics">Github</a>
+                </div>   
             </div>
         </div>
 
-        <hr class="blue-hr">
+       
+
+        <div class="portfolio-subcontainer">
+            <div class="portfolio-subcontainer-left">
+                <img id="su" src="images/hungry.jpg" alt="" width="500" height="500">
+            </div>
+            <div class="portfolio-subcontainer-right">
+                <div class="portfolio-subcontainer-right-text">
+                    <h1>Hungry</h1>
+                    <p>This app was developed by myself and a team of other students including my twin brother.
+                    Hungry is a food suggestion app that helps users decide what to eat, I was responsible for 
+                    implementing front-end react components including the creation of forms and display cards. This 
+                    project taught me a lot, I learned a lot about project management with agile 
+                    principles and got an introduction to the MERN stack.
+                    </p>
+                </div>  
+                <div class="portfolio-subcontainer-right-stack">
+                    <h2>Stack:</h2>
+                    <img class="stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" width="50" height="50"/>
+                    <img class="stack-img-react" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="50" height="50"/>
+                    <img class="stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="50" height="50"/>
+                    <img class="stack-img" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="50" height="50"/>
+                </div> 
+                <div class="portfolio-subcontainer-right-buttons">
+                    <a href="https://github.com/jackwillis517/Hungry">Github</a>
+                </div> 
+            </div>
+        </div>
+
+        
        
     </div>
 
