@@ -360,6 +360,7 @@ ul {
   height: 250px;
   margin-left: 40px;
   margin-right: 40px;
+  margin-top: 20px;
   font-family: "Maven Pro", sans-serif;
   font-size: 25px;
   text-align: center;
@@ -476,20 +477,7 @@ color: black;
 
 /*---------------------------------------------Resume-Page------------------------------------------------*/
 
-.resume-body {
-  margin-left: auto;
-  margin-right: auto;
-  width: 55%;
-  /* bord #eb5e28 1.5px solid; */
-  border-radius: 15px;
-  font-family: "Hind", sans-serif;
-}
-.resume-body h1 {
-  color: #fffcf2;
-  margin: 0%;
-  padding: 0%;
-  text-align: center;
-}
+
 
 .resume-body h2 {
   color: #fffcf2;
@@ -737,6 +725,61 @@ color: black;
   }
 }
 
+.resume-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.resume-body{
+  display: flex;
+  justify-content: center;
+}
+
+.resume-container a{
+  color: #fffcf2;
+  font-family: "Hind", sans-serif;
+  border-radius: 10px;
+  background-color: #437f97;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.resume-container a:hover{
+  transform: scale(95%);
+  background-color: #EB5E28;
+}
+
+.resume-download-button{
+  display: flex;
+  align-self: center;
+  margin: 35px;
+}
+
+.resume-download-button:hover{
+  transform: scale(98%);
+  box-shadow: none;
+  background-color: #EB5E28;
+}
+
+.transcript-download-button{
+  display: flex;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .cards-container {
+    width: 100vh;
+  }
+
+  /* When the display is less then 600px make the last two cards disappear */
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
 /*------------------------------------------------------------------------------------------------------*/
 
 /*---------------------------------------------Portfolio-Page------------------------------------------------*/
@@ -832,8 +875,18 @@ color: black;
 
  @media screen and (max-width: 1024px) {
   .portfolio-subcontainer {
+    display: flex;
     flex-direction: column;
   }
+
+  .stack-img{
+    margin-right: 25px;
+   }
+
+   .stack-img-react{
+    margin-left: 15px;
+   }
+
   .portfolio-subcontainer-left img {
     display: flex;
     width: auto;
@@ -844,7 +897,22 @@ color: black;
   }
 
   .portfolio-subcontainer-right{
-    margin-left: 40px;
+    margin-left: 0px;
+   }
+
+   .portfolio-subcontainer-right-stack{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    align-self: center;
+   }
+
+   .portfolio-subcontainer-right-text{
+    padding-left: 35px;
+   }
+
+   .portfolio-subcontainer-right-buttons{
+    align-self: center;
    }
 
   .portfolio-subcontainer-left {
