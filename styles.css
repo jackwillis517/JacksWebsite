@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Unica+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=DotGothic16&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nixie+One&display=swap");
@@ -9,8 +8,6 @@
 * {
   text-decoration: none;
 }
-
-
 
 body {
   max-width: 1500px; 
@@ -65,7 +62,6 @@ ul {
   transform: translate(-93.85%, -450%);
 }
 
-
 #linkedin-icon {
   padding-left: 25%;
 }
@@ -107,7 +103,7 @@ ul {
   padding-top: 2px;
   background-color: #ef602e;
   border-radius: 4px;
-  transition: .5s ease background-color;
+  transition: 0.5s ease background-color;
 }
 
 #link-resume-dark:hover {
@@ -116,7 +112,7 @@ ul {
   padding-top: 2px;
   color: #fffcf2;
   background-color: #437f97;
-  transition: .5s ease background-color;
+  transition: 0.5s ease background-color;
 }
 /* Light Theme Navbar */
 #link-home-light {
@@ -263,7 +259,7 @@ ul {
 .helloWorld-subcontainer h1 {
   background-color: #403d39;
   color: #fffcf2;
-  font-family: "DotGothic16", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 34px;
 }
 
@@ -334,7 +330,7 @@ ul {
 .technologies-subcontainer h1 {
   background-color: #403d39;
   color: #fffcf2;
-  font-family: "DotGothic16", sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-size: 34px;
 }
 
@@ -476,8 +472,6 @@ color: black;
   border-radius: 2%;
 }
 
-
-
 /*------------------------------------------------------------------------------------------------------*/
 
 /*---------------------------------------------Resume-Page------------------------------------------------*/
@@ -485,8 +479,8 @@ color: black;
 .resume-body {
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
-  /* border: #eb5e28 1.5px solid; */
+  width: 55%;
+  /* bord #eb5e28 1.5px solid; */
   border-radius: 15px;
   font-family: "Hind", sans-serif;
 }
@@ -680,67 +674,67 @@ color: black;
 }
 
 .banner-2 {
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0;
-    height: 1%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: 0;
+  height: 1%;
 }
 
 .cards-container {
-    display: flex;
-    width: 90vw;
+  display: flex;
+  width: 90vw;
 }
 
 .panel {
   border: solid 2px #437f97;
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 500px;
-    border-radius: 50px;
-    color:#fff;
-    cursor: pointer;
-    flex: 0.5;
-    margin: 10px;
-    position: relative;
-    transition: flex 0.7s ease-in;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
 }
 
 .panel h3 {
-    border: solid 1px red;
-    font-size: 24px;
-    width: 40%;
-    position: relative;
-    /* bottom: 20px;
+  border: solid 1px red;
+  font-size: 24px;
+  width: 40%;
+  position: relative;
+  /* bottom: 20px;
     left: 20px; */
-    margin: 0;
-    margin-top: 20%;
-    margin-left: 5%;
-    opacity: 0;
+  margin: 0;
+  margin-top: 20%;
+  margin-left: 5%;
+  opacity: 0;
 }
 
 .panel.active {
-    flex: 5;
+  flex: 5;
 }
 
 .panel.active h3 {
-    opacity: 1;
-    transition: opacity 0.3s ease-in 0.4s;
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
-@media(max-width: 600px){
-    .cards-container{
-        width: 100vh;
-    }
+@media (max-width: 600px) {
+  .cards-container {
+    width: 100vh;
+  }
 
-    /* When the display is less then 600px make the last two cards disappear */
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5){
-        display: none;
-    }
+  /* When the display is less then 600px make the last two cards disappear */
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
 }
 
 /*------------------------------------------------------------------------------------------------------*/
@@ -875,61 +869,60 @@ color: black;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-} 
+}
 
 .contact-container {
-   padding: 20px;
-   margin: 0 auto;
-   height: auto;
-   font-family: "Hind", sans-serif;
-   width: 90%;
-   max-width: 500px;
-   box-shadow: 0px 0px 20px rgb(90, 89, 87);
-   background-color: #437f97;
-   border-radius: 14px;
-   margin-bottom: 20px;
- }
+  padding: 20px;
+  margin: 0 auto;
+  height: auto;
+  font-family: "Hind", sans-serif;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0px 0px 20px rgb(90, 89, 87);
+  background-color: #437f97;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
 
- .form-group {
-   width: 100%;
-   margin-top: 20px;
-   font-size: 20px;
- }
+.form-group {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
 
- .form-group input,
- .form-group textarea {
-   width: 100%;
-   padding: 5px;
-   font-size: 18px;
-   border: 1px solid rgba(128, 128, 128, 0.199);
-   margin-top: 5px;
-   border-radius: 5px;
-   background-color: #252422;
-   color: #fffcf2;
- }
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #252422;
+  color: #fffcf2;
+}
 
- textarea {
-   resize: vertical;
-   max-height: 425px;
-   
- }
+textarea {
+  resize: vertical;
+  max-height: 425px;
+}
 
- button[type="submit"]{
-   width: 100%;
-   border: none;
-   outline: none;
-   padding: 20px;
-   font-size: 24px;
-   border-radius: 8px;
-   font-family: "Hind", sans-serif;
-   background-color: #ef602e;
-   text-align: center;
-   cursor: pointer;
-   margin-top: 10px;
-   transition: .5s ease background-color;
- }
+button[type="submit"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 8px;
+  font-family: "Hind", sans-serif;
+  background-color: #ef602e;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.5s ease background-color;
+}
 
- button[type="submit"]:hover{
+button[type="submit"]:hover {
   background-color: #252422;
   color: #fffcf2;
 }
@@ -944,13 +937,13 @@ color: black;
   font-family: "Hind", sans-serif;
 }
 
-#status.success{
-  background-color:#199e41;
+#status.success {
+  background-color: #199e41;
   animation: status 4s ease forwards;
 }
 
-#status.error{
-  background-color:#f5111c;
+#status.error {
+  background-color: #f5111c;
   color: #fffcf2;
   animation: status 4s ease forwards;
 }
@@ -973,6 +966,23 @@ color: black;
 
 /*---------------------------------------------Media Queries & Hamburger Menu------------------------------------------------*/
 @media screen and (max-width: 800px) {
+  .resume-body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .contact-section {
+    height: 40%;
+    width: 90%;
+    padding-left: 3.5%;
+    padding-top: 4%;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
   .social-menu {
     display: none;
   }
@@ -1153,7 +1163,4 @@ color: black;
     margin-top: 5%;
     border: none;
   }
-
-  
-  
 }
